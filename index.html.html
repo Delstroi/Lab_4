@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №4 — Основи CSS</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header id="top">
+    <h1>Лабораторна робота №4</h1>
+    <p class="subtitle">Основи CSS · Основи інформаційних технологій</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card profile">
+      <img src="photo.jpg" alt="Фото: Терьохін Данііл" class="photo">
+      <div class="profile-text">
+        <h2>Терьохін Данііл</h2>
+        <p><span class="label">Група:</span> СА-11</p>
+        <p><span class="label">Університет:</span> ДУІКТ</p>
+        <p><span class="label">Напрям:</span> Data Engineering / Data Science</p>
+        <p><span class="label">GitHub:</span> <a href="https://github.com/Delstroi">Delstroi</a></p>
+      </div>
+    </section>
+
+    <section class="card" id="about">
+      <h2>Про мене</h2>
+      <p>Я навчаюся в Державному університеті інформаційно-комунікаційних технологій за напрямом Data Engineering / Data Science. Цікавлюся роботою з даними, програмуванням і веб-технологіями. Ця сторінка стилізована за допомогою зовнішнього файлу <code>styles.css</code>.</p>
+    </section>
+
+    <section class="card" id="answers">
+      <h2>Відповіді на контрольні запитання</h2>
+
+      <div class="qa">
+        <h3>3. Що таке селектори в CSS? Наведіть приклади різних типів селекторів.</h3>
+        <p>Селектор вказує, до яких HTML-елементів застосувати правило. Приклади:</p>
+        <ul>
+          <li>селектор елемента: <code>h1 { }</code></li>
+          <li>селектор класу: <code>.card { }</code></li>
+          <li>селектор ідентифікатора: <code>#about { }</code></li>
+          <li>універсальний селектор: <code>* { }</code></li>
+          <li>селектор нащадка: <code>div p { }</code></li>
+          <li>групування: <code>h1, h2 { }</code></li>
+          <li>псевдоклас: <code>a:hover { }</code></li>
+          <li>селектор атрибута: <code>input[type="text"] { }</code></li>
+        </ul>
+      </div>
+
+      <div class="qa">
+        <h3>4. Яка різниця між класовим та ідентифікаторним селекторами?</h3>
+        <p>Клас (<code>.name</code>) можна призначати багатьом елементам, і один елемент може мати кілька класів. Ідентифікатор (<code>#name</code>) має бути унікальним на сторінці: його отримує лише один елемент. Ідентифікатор має вищу специфічність, тому його стилі переважають над стилями класу.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Терьохін Данііл · СА-11 · 2026</p>
+  </footer>
+
+</body>
+</html>
